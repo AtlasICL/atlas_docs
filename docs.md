@@ -9,7 +9,7 @@
     - [Making changes](#making-changes)
     - [Syncing with GitHub](#syncing-with-github)
     - [gitignore](#gitignore)
-    - [git config]()
+    - [git config](#git-config)
 
 - [Python](#python)
     - [Installing python](#installing-python)
@@ -42,10 +42,19 @@ If after staging certain files, you decide you do not want to commit them, you c
 We can sync our git repos with external services such as GitHub.
 - if a repo exists on GitHub, you can clone it to your device using `git clone`. This will create a new directory, whose title is the same as the title of the repo you cloned.
 - once a repo has been cloned, you can use `git status` to check your status, and you should always `git pull` to make sure any changes in the remote repo are reflected on your machine.
-- if you want to create a repo on GitHub, I usually create it on the GitHub website. Then, the directory which I want to upload, I use 
+- if you want to create a repo on GitHub, I usually create it on the GitHub website. Then, in the directory which I want to upload, I run `git init` (if not already initialised), and commit any changes if applicable. Then, `git remote add origin {link to GitHub repo}`, and finally `git push -u origin master`.
 
 ### gitignore
+We don't always want to upload everything to GitHub, whether that's because we have some sensitive files (API keys for instance), or because we have a bunch of .exe or .vscode files.  
+We can specify which particular files, or which types of files do not get managed by git in the .gitignore file.  
+TODO: add example .gitignore file.
 
+### git config
+Every commit has a name and email attached.  
+- to view user name: `git config --global user.name`
+- to set / change user name: `git config --global user.name "{yourName}"`
+- to view user email: `git config --global user.email`
+- to set / change user email: `git config --global user.email "{yourEmail}"`
 
 ## Python
 
