@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-- [Using git](#using-git)
+- [git](#git)
     - [Installing git](#installing-git)
     - [Updating git](#updating-git)
     - [Creating a repo](#updating-git)
@@ -19,7 +19,7 @@
     - [Virtual environments venv](#virtual-environments-venv)
 
 
-## Using git
+## git
 
 ### Installing git
 Download and install git from the [official website](https://git-scm.com/downloads/win).
