@@ -1,6 +1,3 @@
-# atlas_docs
-
-
 # Table of contents
 
 - [git](git.md#git)
