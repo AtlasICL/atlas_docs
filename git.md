@@ -8,6 +8,10 @@
     - [Creating a repo](#updating-git)
     - [Making changes](#making-changes)
     - [Syncing with GitHub](#syncing-with-github)
+        - [Creating a GitHub repo](#creating-a-github-repo)
+        - [Cloning a repo](#cloning-a-repo)
+        - [Uploading commits](#uploading-commits)
+        - [Creating a pull request (PR)](#creating-a-pull-request-pr)
     - [gitignore](#gitignore)
     - [git config](#git-config)
     - [GitHub credential management](#github-credential-management)
@@ -33,11 +37,39 @@ Once files have been "added", they are staged. Staged files can be committed by 
 If after staging certain files, you decide you do not want to commit them, you can remove all staged files with `git reset`, or remove a specific file using `git reset <{filename}>`.
 
 ## Syncing with GitHub
-We can sync our git repos with external services such as GitHub.
-- if a repo exists on GitHub, you can clone it to your device using `git clone`. This will create a new directory, whose title is the same as the title of the repo you cloned.
-- once a repo has been cloned, you can use `git status` to check your status, and you should always `git pull` to make sure any changes in the remote repo are reflected on your machine.
-- to upload any local changes to GitHub, first commit, then `git push`. 
-- if you want to create a repo on GitHub, I usually create it on the GitHub website. Then, in the directory which I want to upload, I run `git init` (if not already initialised), and commit any changes if applicable. Then, `git remote add origin {link to GitHub repo}`, and finally `git push -u origin master`.
+It is useful to sync our git repos with external services such as GitHub. This is mainly for collaboration (but you can use it like I sometimes do, to 'sync' between different devices without using a cloud service).  
+
+### Creating a GitHub repo
+If you want to create a repo on GitHub, I usually create it on the GitHub website. Then, in the directory which I want to upload, I run `git init` (if not already initialised), and commit any changes if applicable. Then, `git remote add origin {link to GitHub repo}`, and finally `git push -u origin master`.  
+
+### Cloning a repo
+If a repo exists on GitHub, you can clone it to your device using `git clone`. This will create a new directory, whose title is the same as the title of the repo you cloned.  
+Once a repo has been cloned, you can use `git status` to check your status, and you should always `git pull` to make sure any changes in the remote repo are reflected on your machine.
+
+### Uploading commits
+To upload any local changes to GitHub, first commit, then `git push`.
+
+### Creating a pull request (PR)
+A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made locally to the "main" branch.  
+In order to create a pull request on GitHub, follow these steps:
+1. Fork the repository you wish to make changes to. This will create a "copy" (fork) of that repository, owned by you.
+2. Clone the fork you just created, using `git clone {your_forked_repo_url}`.
+3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url_}`.
+4. Update your local repository.
+```  
+    git fetch upstream
+    git merge upstream/main
+```
+5. Create and switch to a new branch, using `git checkout -b {new_branch_name}`.
+6. Make and commit your changes.
+7. Push these changes to your forked repository, using `git push origin {new-branch-name}`.
+8. Go to your forked repository on GitHub, where you will see a prompt to create a pull request. Fill in the necessary details, and create the PR.  
+
+
+
+ 
+
+
 
 ## gitignore
 We don't always want to upload everything to GitHub, whether that's because we have some sensitive files (API keys for instance), or because we have a bunch of .exe or .vscode files.  
