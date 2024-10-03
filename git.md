@@ -64,20 +64,3 @@ Once you have a PAT, when prompted to sign in, enter your username as your usern
 In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.
 
 
-<!-- 
-## Python
-
-### Installing python
-
-### Updating python
-
-### Using pip
-
-### Virtual environments venv
-
-## C++
-
-## Markdown
-
-## LaTeX -->
-
