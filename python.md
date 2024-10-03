@@ -38,3 +38,6 @@ To update libraries installed using pip, use: `pip install --upgrade {package_na
 ### Check installed packages and versions
 
 To check the installed packages in your current environment, as well as their versions, use `python -m pip freeze`.
+
+### Check a specific package
+To check whether a specific package is installed (and its version), use `pip show {package_name}`.
