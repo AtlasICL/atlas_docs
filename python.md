@@ -4,6 +4,10 @@
 
 - [Python](#python)
     - [Installing python](#installing-python)
+    - [Virtual environments](#virtual-environments-venv)
+        - [Creating a venv](#creating-a-venv)
+        - [Activating a venv](#activating-a-venv)
+        - [Deactivating a venv](#deactivating-a-venv)
     - [Updating python](#updating-python)
     - [Using pip](#using-pip)
         - [Libraries I use](#libraries-i-use)
@@ -15,6 +19,16 @@
 ## Installing python
 
 ## Virtual environments (venv)
+Virtual environments, typically shortened to venvs, are an extremely useful tool in python. They allow you to install packages for one specific project without having them installed globally. They also create a recreatable and shareable environment for running your code.
+### Creating a venv
+In order to create a virtual environment, navigate to the directory in which you would like to have the venv, then run `python -m venv venv`. **Note:** once a venv has been created, it must be activated.
+
+### Activating a venv
+In order to activate a venv, we must run the activate script, located in the Scripts folder.  
+Since I use PowerShell on Windows, I run the Activate.ps1 script.
+
+### Deactivating a venv
+You can deactivate a venv with `deactivate`.
 
 ## Updating python
 
@@ -29,7 +43,7 @@ Note: you should probably not be installing these globally, but using a virtual 
 - pandas
     - install: `pip install pandas`.
 - sklearn
-    - install: `pip install -U scikit-learn`
+    - install: `pip install scikit-learn`
 
 ### Updating pip packages
 
