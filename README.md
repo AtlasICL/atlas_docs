@@ -20,11 +20,11 @@
         - [Creating a venv](python.md##creating-a-venv)
         - [Activating a venv](python.md##activating-a-venv)
         - [Deactivating a venv](python.md##deactivating-a-venv)
-    - [Updating python](python.md#updating-python)
     - [Using pip](python.md#using-pip)
         - [Libraries I use](python.md#libraries-i-use)
         - [Updating pip packages](python.md#updating-pip-packages)
         - [Check installed packages and versions](python.md#check-installed-packages-and-versions)
+    - [Updating python](python.md#updating-python)
 
 Hey all!  
 My name is Emre, I am a BSc Computer Science student at the University of Exeter.  

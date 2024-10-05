@@ -8,12 +8,11 @@
         - [Creating a venv](#creating-a-venv)
         - [Activating a venv](#activating-a-venv)
         - [Deactivating a venv](#deactivating-a-venv)
-    - [Updating python](#updating-python)
     - [Using pip](#using-pip)
         - [Libraries I use](#libraries-i-use)
         - [Updating pip packages](#updating-pip-packages)
         - [Check installed packages and versions](#check-installed-packages-and-versions)
-    - [Virtual environments venv](#virtual-environments-venv)
+    - [Updating python](#updating-python)
 
 
 ## Installing python
@@ -25,12 +24,12 @@ In order to create a virtual environment, navigate to the directory in which you
 
 ### Activating a venv
 In order to activate a venv, we must run the activate script, located in the Scripts folder.  
-Since I use PowerShell on Windows, I run the Activate.ps1 script.
+Since I use PowerShell on Windows, I run the Activate.ps1 script.  
+On PowerShell, it is common to run into the error "... execution policy". In that instance, simply run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
 
 ### Deactivating a venv
 You can deactivate a venv with `deactivate`.
 
-## Updating python
 
 ## Using pip
 
@@ -55,3 +54,5 @@ To check the installed packages in your current environment, as well as their ve
 
 ### Check a specific package
 To check whether a specific package is installed (and its version), use `pip show {package_name}`.
+
+## Updating python
