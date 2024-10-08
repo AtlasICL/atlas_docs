@@ -12,9 +12,10 @@
         - [Cloning a repo](#cloning-a-repo)
         - [Uploading commits](#uploading-commits)
         - [Creating a pull request (PR)](#creating-a-pull-request-pr)
+        - [GitHub credential management](#github-credential-management)
     - [gitignore](#gitignore)
     - [git config](#git-config)
-    - [GitHub credential management](#github-credential-management)
+    
 
 
 ## Installing git
@@ -54,7 +55,7 @@ A pull request is a request to merge changes you made to a different branch or r
 In order to create a pull request on GitHub, follow these steps:
 1. Fork the repository you wish to make changes to. This will create a "copy" (fork) of that repository, owned by you.
 2. Clone the fork you just created, using `git clone {your_forked_repo_url}`.
-3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url_}`.
+3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url}`.
 4. Update your local repository.
 ```  
     git fetch upstream
@@ -65,7 +66,11 @@ In order to create a pull request on GitHub, follow these steps:
 7. Push these changes to your forked repository, using `git push origin {new-branch-name}`.
 8. Go to your forked repository on GitHub, where you will see a prompt to create a pull request. Fill in the necessary details, and create the PR.  
 
-
+### GitHub credential management
+To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you must use a personal access token, or PAT.  
+In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
+Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.  
+In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.
 
  
 
@@ -89,10 +94,6 @@ Every commit has a name and email attached.
 - to view user email: `git config --global user.email`
 - to set / change user email: `git config --global user.email "{yourEmail}"`
 
-## GitHub credential management
-To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you must use a personal access token, or PAT.  
-In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
-Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.  
-In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.
+
 
 
