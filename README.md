@@ -36,5 +36,5 @@ This repo is a WIP. Feel free to let me know about any feedback, or submit a pul
 ## WIP:
 - git -> finished, please provide feedback
 - python -> in progress
-- c++ -> not started
+- c++ -> please see [progreng](https://github.com/AtlasICL/progreng) repository
 - latex -> not started
