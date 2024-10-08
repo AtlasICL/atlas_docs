@@ -11,9 +11,10 @@
         - [Cloning a repo](git.md#cloning-a-repo)
         - [Uploading commits](git.md#uploading-commits)
         - [Creating a pull request (PR)](git.md#creating-a-pull-request-pr)
+        - [GitHub credential management](git.md#github-credential-management)
     - [gitignore](git.md#gitignore)
     - [git config](git.md#git-config)
-    - [GitHub credential management](git.md#github-credential-management)
+    
 
 - [Python](python.md#python)
     - [Installing python](python.md#installing-python)
