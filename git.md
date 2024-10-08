@@ -55,7 +55,7 @@ A pull request is a request to merge changes you made to a different branch or r
 In order to create a pull request on GitHub, follow these steps:
 1. Fork the repository you wish to make changes to. This will create a "copy" (fork) of that repository, owned by you.
 2. Clone the fork you just created, using `git clone {your_forked_repo_url}`.
-3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url_}`.
+3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url}`.
 4. Update your local repository.
 ```  
     git fetch upstream
