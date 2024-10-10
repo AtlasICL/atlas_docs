@@ -16,6 +16,7 @@
 
 
 ## Installing python
+TODO: write section
 
 ## Virtual environments (venv)
 Virtual environments, typically shortened to venvs, are an extremely useful tool in python. They allow you to install packages for one specific project without having them installed globally. They also create a recreatable and shareable environment for running your code.
@@ -56,3 +57,4 @@ To check the installed packages in your current environment, as well as their ve
 To check whether a specific package is installed (and its version), use `pip show {package_name}`.
 
 ## Updating python
+TODO: write section
