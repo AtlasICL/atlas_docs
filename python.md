@@ -25,7 +25,7 @@ In order to create a virtual environment, navigate to the directory in which you
 
 ### Activating a venv
 In order to activate a venv, we must run the activate script, located in the Scripts folder.  
-Since I use PowerShell on Windows, I run the Activate.ps1 script.  
+Since I use PowerShell on Windows, I run the Activate.ps1 script with `./venv/Scripts/Activate.ps1`.  
 On PowerShell, it is common to run into the error "... execution policy". In that instance, simply run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
 
 ### Deactivating a venv
