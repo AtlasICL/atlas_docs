@@ -16,15 +16,19 @@
     - [gitignore](#gitignore)
     - [git config](#git-config)
     
-
+---
 
 ## Installing git
 Download and install git from the [official website](https://git-scm.com/downloads/win).
+
+---
 
 ## Updating git
 Check your current version by running `git --version`.
 If not up to date, download the latest version from the [official website](https://git-scm.com/downloads/win). This will automatically remove the previous version of git before installing the new one.  
 After installing, check you are up to date, by again running `git --version`.
+
+---
 
 ## Creating a repo
 To create a repo, go to the directory you wish to make a git repo. In the terminal, run `git init`. This will initialise a git repo.  
@@ -32,10 +36,14 @@ A .git folder will be created, which Windows does not show you by default. I rec
 You can check whether your git repo was correctly initialised by running `git status`.  
 If you wish to change a local directory to _not_ be a managed by git, simply delete the .git folder for that directory.
 
+---
+
 ## Making changes
 In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using `git add .`, or choose specific files with `git add {filename}`.  
 Once files have been "added", they are staged. Staged files can be committed by using `git commit -m "{commit message}"`. Alternatively, this can be done through the GUI on the VS Code git extension, but I prefer using the terminal.  
 If after staging certain files, you decide you do not want to commit them, you can remove all staged files with `git reset`, or remove a specific file using `git reset <{filename}>`.
+
+---
 
 ## Syncing with GitHub
 It is useful to sync our git repos with external services such as GitHub. This is mainly for collaboration (but you can use it like I sometimes do, to 'sync' between different devices without using a cloud service).  

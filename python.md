@@ -16,7 +16,7 @@
     - [Installing PyInstaller](#installing-pyinstaller)
     - [Creating a distributable](#creation-of-dist)
     
-
+---
 
 ## Updating python
 Before updating python, it is a good idea to check your current version.  
@@ -58,6 +58,7 @@ In order to see the different versions of python installed on your machine, run
 
  **Note**: after updating python, it is a good idea to also [update pip](#updating-pip). 
 
+---
 
 ## Using pip
 pip is a package manager for python. We can use it to install packages we need to use. It is a good idea to read [the section on virtual environments](#virtual-environments-venv) before installing packages using pip.
@@ -88,6 +89,8 @@ To check the installed packages in your current environment, as well as their ve
 ### Check a specific package
 To check whether a specific package is installed (and its version), use `pip show {package_name}`.
 
+---
+
 ## Virtual environments (venv)
 Virtual environments, typically shortened to venvs, are an extremely useful tool in python. They allow you to install packages for one specific project without having them installed globally. They also create a recreatable and shareable environment for running your code.
 
@@ -101,6 +104,8 @@ On PowerShell, it is common to run into the error "... execution policy". In tha
 
 ### Deactivating a venv
 You can deactivate a venv with `deactivate`.
+
+---
 
 ## Compiling a release
 
