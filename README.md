@@ -38,7 +38,7 @@ This "documentation" page is meant to be for students like me, who want a refere
 This repo is a WIP. Feel free to let me know about any feedback, or submit a pull request. I am happy to listen. I hope you find it helpful!
 
 ## WIP:
-- git -> finished, please provide feedback
-- python -> in progress
+- git -> open for feedback
+- python -> open for feedback
 - c++ -> please see [progreng](https://github.com/AtlasICL/progreng) repository
 - latex -> not started
