@@ -17,16 +17,19 @@
     
 
 - [Python](python.md#python)
-    - [Installing python](python.md#installing-python)
+    - [Updating python](python.md#updating-python) 
     - [Using pip](python.md#using-pip)
+        - [Updating pip](python.md#updating-pip)
         - [Libraries I use](python.md#libraries-i-use)
         - [Updating pip packages](python.md#updating-pip-packages)
         - [Check installed packages and versions](python.md#check-installed-packages-and-versions)
-    - [Virtual environments](python.md##virtual-environments-venv)
-        - [Creating a venv](python.md##creating-a-venv)
-        - [Activating a venv](python.md##activating-a-venv)
-        - [Deactivating a venv](python.md##deactivating-a-venv)
-    - [Updating python](python.md#updating-python)
+    - [Virtual environments](python.md#virtual-environments-venv)
+        - [Creating a venv](python.md#creating-a-venv)
+        - [Activating a venv](python.md#activating-a-venv)
+        - [Deactivating a venv](python.md#deactivating-a-venv)
+    - [Compiling a release](python.md#compiling-a-release)
+        - [Installing PyInstaller](python.md#installing-pyinstaller)
+        - [Creating a distributable](python.md#creation-of-dist)
 
 Hey all!  
 My name is Emre, I am a BSc Computer Science student at the University of Exeter.  
