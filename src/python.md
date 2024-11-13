@@ -68,14 +68,12 @@ You can update pip using `python -m pip install --upgrade pip`
 
 ### Libraries I use
 **Note**: it is good practice to install packages using [virtual environments](#virtual-environments-venv), instead of installing them globally.
-- numpy
-    - install: `python -m pip install numpy`.
-- pandas
-    - install: `python -m pip install pandas`.
-- sklearn
-    - install: `python -m pip install scikit-learn`.
-- matplotlib
-    - install: `python -m pip install matplotlib`.
+- numpy: `python -m pip install numpy`
+- pandas: `python -m pip install pandas`
+- sklearn: `python -m pip install scikit-learn`
+- matplotlib: `python -m pip install matplotlib`
+- seaborn: `python -m pip install seaborn`
+- jupyter: `pip install jupyter`
 
 
 ### Updating pip packages
