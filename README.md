@@ -18,7 +18,7 @@
         - [Creating a distributable](src/python.md#creation-of-dist)
 
 
-# Git
+# [Git](src/git.md#git)
 
 - [git](src/git.md#git)
     - [Installing git](src/git.md#installing-git)
