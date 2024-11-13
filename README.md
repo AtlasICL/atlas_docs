@@ -1,6 +1,6 @@
 # Table of contents
 
-# [Python](src/python.md#python)
+## [Python](src/python.md#python)
 
 - [Updating python](src/python.md#updating-python) 
 - [Using pip](src/python.md#using-pip)
@@ -17,7 +17,7 @@
     - [Creating a distributable](src/python.md#creation-of-dist)
 
 
-# [Git](src/git.md#git)
+## [Git](src/git.md#git)
 
 - [Installing git](src/git.md#installing-git)
 - [Updating git](src/git.md#updating-git)
