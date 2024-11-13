@@ -17,7 +17,6 @@
         - [Installing PyInstaller](src/python.md#installing-pyinstaller)
         - [Creating a distributable](src/python.md#creation-of-dist)
 
----
 
 # Git
 
