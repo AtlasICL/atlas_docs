@@ -28,7 +28,7 @@ Python 3.12.4
 If your install is not up to date, go to the [official python page](https://www.python.org/downloads/), and download the latest version for Windows.  
 When running the installer, make sure to select the option to add python to PATH, as shown below.  
 
-<img src="images/python_installer_options.png" alt="Python installer screenshoy" width="600"/>  
+<img src="images/python_installer_options.png" alt="Python installer screenshot" width="600"/>  
 
 In the installer, you will either see an option to 'Upgrade Now' or 'Install Now'.  
 
