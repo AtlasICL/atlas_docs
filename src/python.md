@@ -73,7 +73,7 @@ You can update pip (itself) using `python -m pip install --upgrade pip`
 - sklearn: `python -m pip install scikit-learn`
 - matplotlib: `python -m pip install matplotlib`
 - seaborn: `python -m pip install seaborn`
-- jupyter: `pip install jupyter`
+- jupyter: `python -m pip install notebook`
 
 
 ### Updating pip packages
