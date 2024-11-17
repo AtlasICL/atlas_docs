@@ -94,6 +94,14 @@ Here is an example .gitignore file:
     testing/
     someAPIkey.txt
 ```
+Alternatively, you can choose to ignore everything by default, and selectively add files to track using a `!` prefix:
+```
+*
+!main.py
+!images/
+!README.md
+!.gitignore
+```
 
 ## git config
 Every commit has a name and email attached.  
