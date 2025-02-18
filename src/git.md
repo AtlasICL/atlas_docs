@@ -75,13 +75,22 @@ In order to create a pull request on GitHub, follow these steps:
 8. Go to your forked repository on GitHub, where you will see a prompt to create a pull request. Fill in the necessary details, and create the PR.  
 
 ### GitHub credential management
-To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you must use a personal access token, or PAT.  
-In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
-Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.  
-In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.
+To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you can use *either* a personal access token (PAT) *or* authenticate using SSH (which I recommend).  
+- **PAT:** In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
+- Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.  
+- In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.  
 
- 
-
+- **SSH:** If you want to use SSH instead, the first step is to create an SSH key [see this section](ssh.md#generating-ssh-keys).  
+Once you have an SSH key pair, go to your GitHub settings, and navigate to your SSH keys section (https://github.com/settings/keys). In this section, you can add your SSH key with the option "New SSH key". Simply add your public key, and you're good to go.  
+Important note: when authenticating using SSH, instead of using links of the form 
+```
+https://github.com/username/repo
+```
+you should instead use
+```
+git@github.com:username/repo
+```
+This applies for git clone {url}, and anywhere else you would normally input the repo url.
 
 
 ## gitignore
