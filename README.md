@@ -33,4 +33,9 @@
 - [git config](src/git.md#git-config)
     
 
+## [SSH](src/ssh.md#ssh)
+
+- [Generating SSH keys](src/ssh.md#generating-ssh-keys)
+- [Using SSH](src/ssh.md#using-ssh)
+
 ---
