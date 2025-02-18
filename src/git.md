@@ -66,8 +66,8 @@ In order to create a pull request on GitHub, follow these steps:
 3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url}`.
 4. Update your local repository.
 ```  
-    git fetch upstream
-    git merge upstream/main
+git fetch upstream
+git merge upstream/main
 ```
 5. Create and switch to a new branch, using `git checkout -b {new_branch_name}`.
 6. Make and commit your changes.
