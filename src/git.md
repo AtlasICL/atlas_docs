@@ -5,7 +5,7 @@
 - [git](#git)
     - [Installing git](#installing-git)
     - [Updating git](#updating-git)
-    - [Creating a repo](#updating-git)
+    - [Creating a repo](#creating-a-repo)
     - [Making changes](#making-changes)
     - [Syncing with GitHub](#syncing-with-github)
         - [Creating a GitHub repo](#creating-a-github-repo)
@@ -59,7 +59,7 @@ Once a repo has been cloned, you can use `git status` to check your status, and 
 To upload any local changes to GitHub, first commit, then `git push`.
 
 ### Creating a pull request (PR)
-A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made locally to the "main" branch.  
+A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made on one branch to another branch. The changes will be reviewed, and may (or may not) be merged.    
 In order to create a pull request on GitHub, follow these steps:
 1. Fork the repository you wish to make changes to. This will create a "copy" (fork) of that repository, owned by you.
 2. Clone the fork you just created, using `git clone {your_forked_repo_url}`.
