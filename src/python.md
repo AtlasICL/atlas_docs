@@ -28,7 +28,7 @@ Python 3.12.4
 If your install is not up to date, go to the [official python page](https://www.python.org/downloads/), and download the latest version for Windows.  
 When running the installer, make sure to select the option to add python to PATH, as shown below.  
 
-<img src="../images/python_installer_options.png" alt="Python installer screenshot" width="600"/>  
+<img src="../images/python_installer_options.png" alt="Python installer screenshot" width="500"/>  
 
 In the installer, you will either see an option to 'Upgrade Now' or 'Install Now'.  
 
@@ -93,15 +93,35 @@ To check whether a specific package is installed (and its version), use `pip sho
 Virtual environments, typically shortened to venvs, are an extremely useful tool in python. They allow you to install packages for one specific project without having them installed globally. They also create a recreatable and shareable environment for running your code.
 
 ### Creating a venv
-In order to create a virtual environment, navigate to the directory in which you would like to have the venv, then run `python -m venv venv`. **Note:** once a venv has been created, it must be activated.
+In order to create a virtual environment, navigate to the directory in which you would like to have the venv, then run
+```
+python -m venv venv
+```
+ **Note:** once a venv has been created, it must be activated before it can be used.
 
 ### Activating a venv
 In order to activate a venv, we must run the activate script, located in the Scripts folder.  
-Since I use PowerShell on Windows, I run the Activate.ps1 script with `./venv/Scripts/Activate.ps1`.  
-On PowerShell, it is common to run into the error "... execution policy". In that instance, simply run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`.
+Since I use PowerShell on Windows, I run the Activate.ps1 script with
+```
+./venv/Scripts/Activate.ps1
+```
+
+This is what it should look like. The `(venv)` at the beginning of the line indicates that your virtual environment is active.  
+
+<img src="../images/venv_activation.png" alt="Virtual environment activation example in PowerShell" width="600"/>  
+
+
+If you run into the error "...execution policy", simply run
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
 
 ### Deactivating a venv
-You can deactivate a venv with `deactivate`.
+You can deactivate a venv with 
+```
+deactivate
+```
 
 ---
 

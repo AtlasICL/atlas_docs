@@ -5,7 +5,7 @@
 - [git](#git)
     - [Installing git](#installing-git)
     - [Updating git](#updating-git)
-    - [Creating a repo](#updating-git)
+    - [Creating a repo](#creating-a-repo)
     - [Making changes](#making-changes)
     - [Syncing with GitHub](#syncing-with-github)
         - [Creating a GitHub repo](#creating-a-github-repo)
@@ -59,15 +59,15 @@ Once a repo has been cloned, you can use `git status` to check your status, and 
 To upload any local changes to GitHub, first commit, then `git push`.
 
 ### Creating a pull request (PR)
-A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made locally to the "main" branch.  
+A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made on one branch to another branch. The changes will be reviewed, and may (or may not) be merged.    
 In order to create a pull request on GitHub, follow these steps:
 1. Fork the repository you wish to make changes to. This will create a "copy" (fork) of that repository, owned by you.
 2. Clone the fork you just created, using `git clone {your_forked_repo_url}`.
 3. Set up a remote upstream. This will allow you to sync changes from the original repository. In the directory of the forked repo, run `git remote add upstream {original_repo_url}`.
 4. Update your local repository.
 ```  
-    git fetch upstream
-    git merge upstream/main
+git fetch upstream
+git merge upstream/main
 ```
 5. Create and switch to a new branch, using `git checkout -b {new_branch_name}`.
 6. Make and commit your changes.
@@ -75,13 +75,23 @@ In order to create a pull request on GitHub, follow these steps:
 8. Go to your forked repository on GitHub, where you will see a prompt to create a pull request. Fill in the necessary details, and create the PR.  
 
 ### GitHub credential management
-To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you must use a personal access token, or PAT.  
-In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
-Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.  
-In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.
+To clone / make changes to private GitHub repositories, you must be signed in. GitHub no longer supports password-based authentication, so you can use *either* a personal access token (PAT) *or* authenticate using SSH (which I recommend).  
+- **PAT:** In order to create a PAT, go to the [GitHub tokens page](https://github.com/settings/tokens). Here, you can view any tokens already active for your account, or create new ones.  
+Once you have a PAT, when prompted to sign in, enter your username as your username, and the PAT as your password.    
+In order to avoid entering your PAT on every login prompt, use `git config --global credential.helper store`. After your first successful login, this will store your login credentials.  
 
- 
-
+- **SSH:** If you want to use SSH instead, the first step is to create an SSH key [see this section](ssh.md#generating-ssh-keys).  
+Once you have an SSH key pair, go to your GitHub settings, and navigate to your SSH keys section (https://github.com/settings/keys). In this section, you can add your SSH key with the option "New SSH key". Simply add your public key, and you're good to go.  
+  
+Important note: when authenticating using SSH, instead of using links of the form 
+```
+https://github.com/username/repo
+```
+you should instead use
+```
+git@github.com:username/repo
+```
+This applies for git clone {url}, and anywhere else you would normally input the repo url.
 
 
 ## gitignore
@@ -93,6 +103,14 @@ Here is an example .gitignore file:
     .vscode
     testing/
     someAPIkey.txt
+```
+Alternatively, you can choose to ignore everything by default, and selectively add files to track using a `!` prefix:
+```
+*
+!main.py
+!images/
+!README.md
+!.gitignore
 ```
 
 ## git config
