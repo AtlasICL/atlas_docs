@@ -110,13 +110,20 @@ You can deactivate a venv with `deactivate`.
 ### Installing PyInstaller
 We can "compile" our python file into a system binary (.exe file) to publish as a distributable release.  
 In order to do this, we need the pyinstaller library.  
-To check whether it is already installed, use `pip show pyinstaller`. If your output looks like
+To check whether it is already installed, use 
 ```
-Name: pyinstaller
-Version: 6.11.0
-...
+pip show pyinstaller
 ```
-then you are good to go. If not, install it using `python -m pip install pyinstaller`.  
+If it is installed, you should see:
+```
+> Name: pyinstaller
+> Version: 6.11.0
+> ...
+```
+Otherwise, install it using
+```
+python -m pip install pyinstaller
+```  
 
 ### Creation of dist
 Once this step is done, we can compile our python script using 
