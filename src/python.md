@@ -111,7 +111,8 @@ This is what it should look like. The `(venv)` at the beginning of the line indi
 <img src="../images/venv_activation.png" alt="Virtual environment activation example in PowerShell" width="600"/>  
 
 
-If you run into the error "...execution policy", simply run
+If you''re using PowerShell, you might run into the error `...execution policy`.  
+If that is the case, run 
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
