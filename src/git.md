@@ -39,8 +39,11 @@ If you wish to change a local directory to _not_ be a managed by git, simply del
 ---
 
 ## Making changes
-In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using `git add .`, or choose specific files with `git add {filename}`.  
-Once files have been "added", they are staged. Staged files can be committed by using `git commit -m "{commit message}"`. Alternatively, this can be done through the GUI on the VS Code git extension, but I prefer using the terminal.  
+In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using `git add .`, or choose specific files with
+```
+git add {filename}
+```  
+Once files have been "added", they are **staged**. Staged files can be committed by using `git commit -m "{commit message}"`. Alternatively, this can be done through the GUI on the VS Code git extension, but I prefer using the terminal.  
 If after staging certain files, you decide you do not want to commit them, you can remove all staged files with `git reset`, or remove a specific file using `git reset <{filename}>`.
 
 ---
