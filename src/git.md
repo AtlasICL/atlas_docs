@@ -117,7 +117,10 @@ git clone git@github.com:username/repo_name my_local_folder
 
 
 ### Uploading commits
-To upload any local changes to GitHub, first commit, then `git push`.
+To upload any local changes to GitHub, first commit, then 
+```
+git push
+```
 
 ### Creating a pull request (PR)
 A pull request is a request to merge changes you made to a different branch or repo. Put more simply, it is a request to push changes you made on one branch to another branch. The changes will be reviewed, and may (or may not) be merged.    
