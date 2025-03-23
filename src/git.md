@@ -48,8 +48,20 @@ Staged files can be committed by using
 ```
 git commit -m "commit message"
 ``` 
-If, after staging certain files, you decide you do *not* want to commit them, you can unstage them with `git reset` (to unstage all staged files), `git reset filename` (to unstage specific files).  
+If, after staging certain files, you decide you do *not* want to commit them, you can unstage them with
+```
+git reset
+``` 
+to unstage all staged files, or 
+```
+git reset filename
+```
+to unstage specific files.  
 
+You can commit without making any changes (to mark a specific version / milestone) if you wish, using 
+```
+git commit --allow-empty -m "commit message"
+```
 ---
 
 ## Syncing with GitHub
