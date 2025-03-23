@@ -84,11 +84,37 @@ git commit --allow-empty -m "commit message"
 It is useful to sync our git repos with external services such as GitHub. This is mainly for collaboration (but you can use it like I sometimes do, to 'sync' between different devices without using a cloud service).  
 
 ### Creating a GitHub repo
-If you want to create a repo on GitHub, I usually create it on the GitHub website. Then, in the directory which I want to upload, I run `git init` (if not already initialised), and commit any changes if applicable. Then, `git remote add origin {link to GitHub repo}`, and finally `git push -u origin master`.  
+If you want to create a repo on GitHub, I usually create it on the GitHub website. Then, in the directory which I want to upload, I run `git init` (if not already initialised), and commit any changes if applicable. Then, 
+```
+git remote add origin {link to GitHub repo}
+```
+and finally 
+```
+git push -u origin master
+```  
+You can always view your remote origins using 
+```
+git remote -v
+```
+Remove a remote origin using
+```
+git remote remove origin
+```
 
 ### Cloning a repo
-If a repo exists on GitHub, you can clone it to your device using `git clone`. This will create a new directory, whose title is the same as the title of the repo you cloned.  
-Once a repo has been cloned, you can use `git status` to check your status, and you should always `git pull` to make sure any changes in the remote repo are reflected on your machine.
+If a repo exists on GitHub, you can clone it to your device using 
+```
+git clone https://github.com/username/repo_name
+``` 
+**Note**: if you are using ssh for authentication, the format is:
+```
+git clone git@github.com:username/repo_name
+```
+You can also clone a remote repo into a pre-existing local folder using 
+```
+git clone git@github.com:username/repo_name my_local_folder
+```
+
 
 ### Uploading commits
 To upload any local changes to GitHub, first commit, then `git push`.
