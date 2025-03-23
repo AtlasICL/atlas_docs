@@ -20,7 +20,7 @@
 
 ## Updating python
 Before updating python, it is a good idea to check your current version.  
-You can do this using `python --version`.
+You can do this using 
 ```
 > python --version
 Python 3.12.4
