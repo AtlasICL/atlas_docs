@@ -64,7 +64,10 @@ In order to see the different versions of python installed on your machine, run
 pip is a package manager for python. We can use it to install packages we need to use. It is a good idea to read [the section on virtual environments](#virtual-environments-venv) before installing packages using pip.
 
 ### Updating pip
-You can update pip (itself) using `python -m pip install --upgrade pip`  
+You can update pip (itself) using 
+```
+python -m pip install --upgrade pip
+```  
 
 ### Libraries I use
 **Note**: it is good practice to install packages using [virtual environments](#virtual-environments-venv), instead of installing them globally.
