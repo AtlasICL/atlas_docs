@@ -24,22 +24,38 @@ Download and install git from the [official website](https://git-scm.com/downloa
 ---
 
 ## Updating git
-Check your current version by running `git --version`.
+Check your current version by running
+```
+git --version
+```  
 If not up to date, download the latest version from the [official website](https://git-scm.com/downloads/win). This will automatically remove the previous version of git before installing the new one.  
-After installing, check you are up to date, by again running `git --version`.
+After installing, check you are up to date, by running `git --version` again.
 
 ---
 
 ## Creating a repo
-To create a repo, go to the directory you wish to make a git repo. In the terminal, run `git init`. This will initialise a git repo.  
+To create a repo, go to the directory you wish to make a git repo. In the terminal, run 
+```
+git init
+```
+This will initialise a git repo in that directory.  
+You can see a `.git` folder in directories managed with git.  
 A .git folder will be created, which Windows does not show you by default. I recommend checking the setting "show hidden files / folders" in the Windows file explorer to be able to see .git folders. This makes it easier, when using the file explorer GUI, to tell which directories are git repos, and which are not.  
-You can check whether your git repo was correctly initialised by running `git status`.  
+In Linux, you can view it using `ls -a`.  
+You can check whether your git repo was correctly initialised by running 
+```
+git status
+```  
 If you wish to change a local directory to _not_ be a managed by git, simply delete the .git folder for that directory.
 
 ---
 
 ## Making changes
-In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using `git add .`, or choose specific files with
+In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using 
+```
+git add .
+```
+or choose specific files to stage with
 ```
 git add filename
 ```  
