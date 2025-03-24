@@ -28,7 +28,7 @@ Python 3.12.4
 If your install is not up to date, go to the [official python page](https://www.python.org/downloads/), and download the latest version for Windows.  
 When running the installer, make sure to select the option to add python to PATH, as shown below.  
 
-<img src="../images/python_installer_options.png" alt="Python installer screenshot" width="500"/>  
+<img src="images/python_installer_options.png" alt="Python installer screenshot" width="500"/>  
 
 In the installer, you will either see an option to 'Upgrade Now' or 'Install Now'.  
 
@@ -111,7 +111,7 @@ Since I use PowerShell on Windows, I run the Activate.ps1 script with
 
 This is what it should look like. The `(venv)` at the beginning of the line indicates that your virtual environment is active.  
 
-<img src="../images/venv_activation.png" alt="Virtual environment activation example in PowerShell" width="600"/>  
+<img src="images/venv_activation.png" alt="Virtual environment activation example in PowerShell" width="600"/>  
 
 
 If you''re using PowerShell, you might run into the error `...execution policy`.  
