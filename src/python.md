@@ -6,6 +6,7 @@
 - [Using pip](#using-pip)
     - [Updating pip](#updating-pip)
     - [Libraries I use](#libraries-i-use)
+    - [Project requirements](#project-requirements)
     - [Updating pip packages](#updating-pip-packages)
     - [Check installed packages and versions](#check-installed-packages-and-versions)
 - [Virtual environments](#virtual-environments-venv)
@@ -79,16 +80,23 @@ python -m pip install --upgrade pip
 - jupyter: `python -m pip install notebook`
 
 
+### Project requirements
+It is common for a python project to list the pip packages it uses in a file named `requirements.txt`.  
+All required packages can be installed using
+```
+pip install -r requirements.txt
+```
+
 ### Updating pip packages
 
-To update libraries installed using pip, use: `pip install --upgrade {package_name}`.
+To update libraries installed using pip, use: `pip install --upgrade package_name`.
 
 ### Check installed packages and versions
 
 To check the installed packages in your current environment, as well as their versions, use `python -m pip freeze`.
 
 ### Check a specific package
-To check whether a specific package is installed (and its version), use `pip show {package_name}`.
+To check whether a specific package is installed (and its version), use `pip show package_name`.
 
 ---
 
