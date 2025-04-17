@@ -153,7 +153,11 @@ python -m pip install pyinstaller
 Once this step is done, we can compile our python script using 
 ``` 
 pyinstaller --onefile your_script.py
-```  
-We can choose to add the `--windowed` to omit the command line window for a GUI application, as well as `--icon=myicon.ico` to add a custom icon to our executable.  
-Note: .ico file extension refers to an image format specifically used for icons in Windows. It typically includes different resolutions of the icon to accomodate size scaling. You can use an online converter to get a .ico file (or generate it yourself in GIMP or otherwise).
+```
 
+**Options:**  
+- `--windowed` to omit the cli for a GUI application
+- `--icon=iconName.ico` to add a custom icon for the executable
+- `--name NameOfExecutable` to give the dist a custom name
+
+Note: .ico file extension refers to an image format specifically used for icons to accomodate size scaling. You can use an online converter to get a .ico file (or generate it yourself in GIMP or otherwise).
