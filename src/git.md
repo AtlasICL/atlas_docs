@@ -16,6 +16,9 @@
         - [GitHub credential management](#github-credential-management)
     - [gitignore](#gitignore)
     - [git config](#git-config)
+        - [Global edit](#global-edit)
+        - [Aliases](#aliases--shortcuts)
+        - [Name and email](#name-and-email)
     
 ---
 
@@ -232,16 +235,16 @@ Here is an example .gitconfig file.
     pr = pull --rebase
 ```
 
+### Aliases / shortcuts
+You can add aliases for git commands to make your life easier.  
+Here are a couple that I use:
+- `git st` for `git status -s`
+- `git pr` for `git pull --rebase`
+
 ### Name and email
 Every commit has a name and email attached.  
 - to view user name: `git config --global user.name`
 - to set / change user name: `git config --global user.name "{yourName}"`
 - to view user email: `git config --global user.email`
 - to set / change user email: `git config --global user.email "{yourEmail}"`
-
-### Aliases / shortcuts
-You can add aliases for git commands to make your life easier.  
-Here are a couple that I use:
-- `git st` for `git status -s`
-- `git pr` for `git pull --rebase`
 
