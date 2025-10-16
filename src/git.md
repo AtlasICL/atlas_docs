@@ -207,12 +207,41 @@ Alternatively, you can choose to ignore everything by default, and selectively a
 ```
 
 ## git config
+
+### Global edit
+You can edit your git configuration using:
+```
+git config --global --edit
+```
+By default, the editor is vim. I am not a vim enjoyer so I use:
+```
+git config --global core.editor "code --wait"
+```
+to set the editor to VS Code.
+
+This config file allows you to directly view and edit your git configuration.  
+Here is an example .gitconfig file.
+```
+[user]
+	email = b.smith@exeter.ac.uk
+	name = Bloop Smith
+[core]
+	editor = code --wait
+[alias]
+    st = status -s
+    pr = pull --rebase
+```
+
+### Name and email
 Every commit has a name and email attached.  
 - to view user name: `git config --global user.name`
 - to set / change user name: `git config --global user.name "{yourName}"`
 - to view user email: `git config --global user.email`
 - to set / change user email: `git config --global user.email "{yourEmail}"`
 
-
-
+### Aliases / shortcuts
+You can add aliases for git commands to make your life easier.  
+Here are a couple that I use:
+- `git st` for `git status -s`
+- `git pr` for `git pull --rebase`
 
