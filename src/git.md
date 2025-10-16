@@ -7,6 +7,7 @@
     - [Updating git](#updating-git)
     - [Creating a repo](#creating-a-repo)
     - [Making changes](#making-changes)
+    - [Branches](#branches)
     - [Syncing with GitHub](#syncing-with-github)
         - [Creating a GitHub repo](#creating-a-github-repo)
         - [Cloning a repo](#cloning-a-repo)
@@ -79,6 +80,34 @@ You can commit without making any changes (to mark a specific version / mileston
 git commit --allow-empty -m "commit message"
 ```
 ---
+
+## Branches
+Branches allow you to work on code in a separate "environment" to the "definitive" version of the code.  
+This definitive version is often called `master` or `main`.  
+
+### Creating a new branch 
+You can create a new branch using 
+``` 
+git checkout -b new_branch_name
+```
+Commits made in this branch will need to be pushed up to the repo using 
+```
+git commit -u origin new_branch_name
+```
+
+### Switching between branches
+You can switch between branches using
+```
+git checkout name_of_branch
+```
+
+### Deleting branches
+You can delete a branch using 
+``` 
+git branch -d name_of_branch
+```
+or force delete using `-D`.
+
 
 ## Syncing with GitHub
 It is useful to sync our git repos with external services such as GitHub. This is mainly for collaboration (but you can use it like I sometimes do, to 'sync' between different devices without using a cloud service).  
