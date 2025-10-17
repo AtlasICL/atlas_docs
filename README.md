@@ -30,10 +30,10 @@
     - [Creating a pull request (PR)](src/git.md#creating-a-pull-request-pr)
     - [GitHub credential management](src/git.md#github-credential-management)
 - [gitignore](src/git.md#gitignore)
-- [git config](#git-config)
-    - [Global edit](#global-edit)
-    - [Aliases](#aliases--shortcuts)
-    - [Name and email](#name-and-email)
+- [git config](src/git.md#git-config)
+    - [Global edit](src/git.md#global-edit)
+    - [Aliases](src/git.md#aliases--shortcuts)
+    - [Name and email](src/git.md#name-and-email)
     
 
 ## [SSH](src/ssh.md#ssh)
