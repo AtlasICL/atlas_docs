@@ -45,6 +45,18 @@ Each process is represented by a **process control block** (PCB). The PCB is
 stored in memory.  
 <img src="images/os/pcb.png" alt="Process control block" width="400"/>  
 
+## Context switches
+
+When we switch between processes:
+1) Change the process scheduling state of Process A
+2) Save the context of Process A
+3) Load the context of Process B
+4) Change the process scheduling state of Process B
+
+This represents overhead associated with context switches (since no *useful* 
+execution occurs during the context switch).  
+
+System performance vs number of context switches (tradeoff)
 
 
 
