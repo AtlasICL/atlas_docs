@@ -55,7 +55,7 @@ If you wish to change a local directory to _not_ be a managed by git, simply del
 ---
 
 ## Making changes
-In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using 
+In order to save changes, you must first choose which files within the git repo you want to save. You can select all by using 
 ```
 git add .
 ```
