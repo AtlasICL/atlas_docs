@@ -95,7 +95,7 @@ git checkout -b new_branch_name
 ```
 Commits made in this branch will need to be pushed up to the repo using 
 ```
-git commit -u origin new_branch_name
+git push -u origin new_branch_name
 ```
 
 ### Switching between branches
@@ -122,7 +122,7 @@ git remote add origin {link to GitHub repo}
 ```
 and finally 
 ```
-git push -u origin master
+git push -u origin main
 ```  
 You can always view your remote origins using 
 ```
