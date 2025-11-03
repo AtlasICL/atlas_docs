@@ -24,7 +24,7 @@ Note: on Linux, you must use `ls -a` instead of `ls` in order to see the `.ssh` 
 
 ## Using SSH
 
-**Important:** YOU SHOULD NEVER SHARE YOUR PRIVATE KEY! That's why it's called the *private* key.
+**Important:** You should never share your private key! That's why it's called the *private* key.
 
-When authenticating using SSH, you will need to provide your public key to whichever service you are authenticating with (remote server, GitHub, etc...). "Providing" the key usually consists in copy-pasting it from your .pub file. Once your public key has been stored, your matching private key will effectively be your password.
+When authenticating using SSH, you will need to provide your public key to whichever service you are authenticating with (remote server, GitHub, etc...). "Providing" the key usually consists in copy-pasting it from your .pub file. Once your public key has been stored, your matching private key will effectively act as your password.
 
