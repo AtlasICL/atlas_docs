@@ -2,20 +2,24 @@
 
 # Table of contents
 
-- [Updating python](#updating-python) 
+- [Updating python](#updating-python)
+  - [For 'Upgrade Now':](#for-upgrade-now)
+  - [For 'Install Now':](#for-install-now)
 - [Using pip](#using-pip)
-    - [Updating pip](#updating-pip)
-    - [Libraries I use](#libraries-i-use)
-    - [Project requirements](#project-requirements)
-    - [Updating pip packages](#updating-pip-packages)
-    - [Check installed packages and versions](#check-installed-packages-and-versions)
-- [Virtual environments](#virtual-environments-venv)
-    - [Creating a venv](#creating-a-venv)
-    - [Activating a venv](#activating-a-venv)
-    - [Deactivating a venv](#deactivating-a-venv)
+  - [Updating pip](#updating-pip)
+  - [Libraries I use](#libraries-i-use)
+  - [Project requirements](#project-requirements)
+  - [Updating pip packages](#updating-pip-packages)
+  - [Check installed packages and versions](#check-installed-packages-and-versions)
+  - [Check a specific package](#check-a-specific-package)
+- [Virtual environments (venv)](#virtual-environments-venv)
+  - [Creating a venv](#creating-a-venv)
+  - [Activating a venv](#activating-a-venv)
+  - [Deactivating a venv](#deactivating-a-venv)
 - [Compiling a release](#compiling-a-release)
-    - [Installing PyInstaller](#installing-pyinstaller)
-    - [Creating a distributable](#creation-of-dist)
+  - [Installing PyInstaller](#installing-pyinstaller)
+  - [Creation of dist](#creation-of-dist)
+
     
 ---
 

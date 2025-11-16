@@ -2,7 +2,6 @@
 
 # Table of contents
 
-- [git](#git)
 - [Installing git](#installing-git)
 - [Updating git](#updating-git)
 - [Creating a repo](#creating-a-repo)
