@@ -3,22 +3,30 @@
 # Table of contents
 
 - [git](#git)
-    - [Installing git](#installing-git)
-    - [Updating git](#updating-git)
-    - [Creating a repo](#creating-a-repo)
-    - [Making changes](#making-changes)
-    - [Branches](#branches)
-    - [Syncing with GitHub](#syncing-with-github)
-        - [Creating a GitHub repo](#creating-a-github-repo)
-        - [Cloning a repo](#cloning-a-repo)
-        - [Uploading commits](#uploading-commits)
-        - [Creating a pull request (PR)](#creating-a-pull-request-pr)
-        - [GitHub credential management](#github-credential-management)
-    - [gitignore](#gitignore)
-    - [git config](#git-config)
-        - [Global edit](#global-edit)
-        - [Aliases](#aliases--shortcuts)
-        - [Name and email](#name-and-email)
+- [Installing git](#installing-git)
+- [Updating git](#updating-git)
+- [Creating a repo](#creating-a-repo)
+- [Making changes](#making-changes)
+- [Branches](#branches)
+  - [Creating a new branch](#creating-a-new-branch)
+  - [Switching between branches](#switching-between-branches)
+  - [Deleting branches](#deleting-branches)
+- [Syncing with GitHub](#syncing-with-github)
+  - [Creating a GitHub repo](#creating-a-github-repo)
+  - [Cloning a repo](#cloning-a-repo)
+  - [Uploading commits](#uploading-commits)
+  - [Creating a pull request (PR)](#creating-a-pull-request-pr)
+  - [GitHub credential management](#github-credential-management)
+- [Time travel](#time-travel)
+  - [View an old snapshot](#view-an-old-snapshot)
+  - [Make a new branch from an old snapshot](#make-a-new-branch-from-an-old-snapshot)
+  - [Export an old snapshot](#export-an-old-snapshot)
+- [gitignore](#gitignore)
+- [git config](#git-config)
+  - [Global edit](#global-edit)
+  - [Aliases / shortcuts](#aliases--shortcuts)
+  - [Name and email](#name-and-email)
+
     
 ---
 
@@ -188,6 +196,34 @@ you should instead use
 git@github.com:username/repo
 ```
 This applies for git clone {url}, and anywhere else you would normally input the repo url.
+
+
+## Time travel
+
+### View an old snapshot
+If you want to get a snapshot of the repo at the time of a certain commit, use
+```
+git switch --detach <commit-hash>
+```
+
+In order to go back, simply
+```
+git switch main
+```
+
+### Make a new branch from an old snapshot
+If you want to go back to an older version and make some changes, then
+```
+git branch old-state <commit-hash>
+git switch old-state
+```
+This will create a new branch from that state.
+
+### Export an old snapshot
+To create an archive of the project at a certain commit, use
+```
+git archive --format=zip --output=project-at-time.zip <commit-hash>
+```
 
 
 ## gitignore
