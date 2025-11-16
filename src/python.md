@@ -46,14 +46,14 @@ Now the update is complete!
 
 ### For 'Install Now':
 If you see the option to install instead of upgrade, that means the installer hasn't detected your old version of python. Not to worry. Simply follow the instructions in the installer. This will install the new version of python.  
-At this point, if you are OK with having multiple versions of python installed on your machine at the same time, then you can log off. However, in my (limited) experience, this can create problems, such as pip linking to a specific version of python. Although these problems can be managed, we might as well avoid the problems entirely by only keeping the latest version installed, especially as backwards compatibility should'nt be a problem.  
+At this point, if you are OK with having multiple versions of python installed on your machine at the same time, then you can log off. However, in my (limited) experience, this can create problems, such as pip linking to a specific version of python. Although these problems can be managed, we might as well avoid the problems entirely by only keeping the latest version installed, especially as backwards compatibility shouldn't be a problem.  
 In order to see the different versions of python installed on your machine, run  
 ``` 
 > py --list
  -V:3.13 *        Python 3.13 (64-bit)
  -V:3.12          Python 3.12 (64-bit)
  ```  
- Here you can see that I did succesfully install 3.13, the new version, however the older version 3.12 is also installed. For reference, the asterisk indicates the default version.  
+ Here you can see that I did successfully install 3.13, the new version, however the older version 3.12 is also installed. For reference, the asterisk indicates the default version.  
  If I now want to uninstall python3.12, I can simply do so by uninstalling it in the Windows settings, just like I would a normal program.  
  Once this has been done, you should be good to go! You can use the commands outlined earlier to check your installed version of python.  
 
@@ -84,12 +84,12 @@ python -m pip install --upgrade pip
 It is common for a python project to list the pip packages it uses in a file named `requirements.txt`.  
 All required packages can be installed using
 ```
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### Updating pip packages
 
-To update libraries installed using pip, use: `pip install --upgrade package_name`.
+To update libraries installed using pip, use: `python -m pip install --upgrade package_name`.
 
 ### Check installed packages and versions
 
@@ -122,7 +122,7 @@ This is what it should look like. The `(venv)` at the beginning of the line indi
 <img src="images/venv_activation.png" alt="Virtual environment activation example in PowerShell" width="600"/>  
 
 
-If you''re using PowerShell, you might run into the error `...execution policy`.  
+If you're using PowerShell, you might run into the error `...execution policy`.  
 If that is the case, run 
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -168,4 +168,4 @@ pyinstaller --onefile your_script.py
 - `--icon=iconName.ico` to add a custom icon for the executable
 - `--name NameOfExecutable` to give the dist a custom name
 
-Note: .ico file extension refers to an image format specifically used for icons to accomodate size scaling. You can use an online converter to get a .ico file (or generate it yourself in GIMP or otherwise).
+Note: .ico file extension refers to an image format specifically used for icons to accommodate size scaling. You can use an online converter to get a .ico file (or generate it yourself in GIMP or otherwise).

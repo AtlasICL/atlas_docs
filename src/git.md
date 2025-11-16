@@ -55,7 +55,7 @@ If you wish to change a local directory to _not_ be a managed by git, simply del
 ---
 
 ## Making changes
-In order to save changes, you must first choose which files withing the git repo you want to save. You can select all by using 
+In order to save changes, you must first choose which files within the git repo you want to save. You can select all by using 
 ```
 git add .
 ```
@@ -95,7 +95,7 @@ git checkout -b new_branch_name
 ```
 Commits made in this branch will need to be pushed up to the repo using 
 ```
-git commit -u origin new_branch_name
+git push -u origin new_branch_name
 ```
 
 ### Switching between branches
@@ -122,7 +122,7 @@ git remote add origin {link to GitHub repo}
 ```
 and finally 
 ```
-git push -u origin master
+git push -u origin main
 ```  
 You can always view your remote origins using 
 ```
